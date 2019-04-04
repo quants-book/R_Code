@@ -1,8 +1,8 @@
 ## Brandy Consumption in Australia ##
 
 # Importing data #
-url1 = 'https://raw.githubusercontent.com/mcanela-iese/'
-url2 = 'Quants_Book/master/brandy.csv'
+url1 = 'https://raw.githubusercontent.com/quants-book/'
+url2 = 'CSV_Files/master/brandy.csv'
 url = paste0(url1, url2)
 df = read.csv(url, stringsAsFactors=FALSE)
 str(df)
