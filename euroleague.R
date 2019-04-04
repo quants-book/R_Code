@@ -4,8 +4,8 @@
 Sys.setlocale('LC_TIME', 'English')
 
 # Importing data #
-url1 = 'https://raw.githubusercontent.com/mcanela-iese/'
-url2 = 'Quants_Book/master/euroleague.csv'
+url1 = 'https://raw.githubusercontent.com/quants-book/'
+url2 = 'CSV_Files/master/euroleague.csv'
 url = paste0(url1, url2)
 df_raw = read.csv(url, stringsAsFactors=FALSE)
 str(df_raw)
