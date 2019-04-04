@@ -1,1 +1,3 @@
-#### This repo contains files with R code for the analysis of the examples of the book Quantitative Methods for Management, by Miguel Ángel Canela, Inés Alegre and Alberto Ibarra.
+This repo contains the R code for the examples of the book:
+
+MA Canela, I Alegre & A Ibarra (2019), *Quantitative Methods for Management --- A Practical Approach*, Springer.
