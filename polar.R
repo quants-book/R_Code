@@ -1,8 +1,8 @@
 ## Polar Bear Sales ##
 
 # Importing data #
-url1 = 'https://raw.githubusercontent.com/mcanela-iese/'
-url2 = 'Quants_Book/master/polar.csv'
+url1 = 'https://raw.githubusercontent.com/quants-book/'
+url2 = 'CSV_Files/master/polar.csv'
 url = paste0(url1, url2)
 df = read.csv(url, stringsAsFactors = FALSE)
 str(df)
