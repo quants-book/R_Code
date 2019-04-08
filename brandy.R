@@ -11,7 +11,7 @@ str(df)
 xt = ts(data = df$SALES, start=c(1985,1),
   end=c(2014,2), frequency = 4, deltat = 1/4)
 plot(xt,
-  main = 'Figure 12.3. Brandy quarterly sales (1985-2013)',
+  main = 'Figure 12.3. Brandy quarterly sales',
   xlab = '', ylab = 'Brandy sales (1000 litres alcohol)')
 
 # Dropping year 2014 #
