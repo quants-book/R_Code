@@ -13,15 +13,6 @@ xt = ts(data = df$SALES, start= c(2008,1),
 plot(xt, main ='Figure 11.1 Bayou Beer sales',
   xlab = '', ylab = 'Thousand barrels')
 
-# Figure 11.2 #
-plot(xt,
-  main = 'Figure 11.2. Bayou Beer sales with linear and quadratic trends',
-  xlab = '', ylab = 'Thousand barrels')
-t = 1:120
-lines(2008 + (0:119)/12, lm(xt ~ t)$fitted.values)
-lines(2008 + (0:119)/12, lm(xt ~ t + I(t^2))$fitted.values,
-      lty = 2)
-
 # Splitting the data set #
 df1 = df[df$YEAR < 2017, ]
 df2 = df[df$YEAR == 2017, ]
@@ -37,6 +28,13 @@ t2 = t^2
 qmod = lm(formula = SALES ~ t + t2, data = df1)
 summary(qmod)
 qtrend = qmod$fitted.values
+
+# Figure 11.2 #
+plot(xt,
+  main = 'Figure 11.2. Bayou Beer sales with linear and quadratic trends',
+  xlab = '', ylab = 'Thousand barrels')
+lines(2008 + (t - 1)/12, ltrend)
+lines(2008 + (t - 1)/12, qtrend, lty = 2)
 
 # Calculating the seasonals #
 month = rep(1:12, 9)
