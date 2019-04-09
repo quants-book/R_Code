@@ -52,7 +52,7 @@ pred_error = df1$SALES - pred_sales
 # Figure 11.4 #
 plot(xt, main = 'Figure 11.4. Predicted vs. actual sales',
   xlab = '', ylab = 'Thousand barrels')
-lines(2008 + (0:107)/12, pred_sales, lty = 2)
+lines(2008 + (t - 1)/12, pred_sales, lty = 2)
 
 # Figure 11.5 #
 et = ts(data = pred_error, start = c(2008, 1), 
