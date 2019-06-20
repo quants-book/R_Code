@@ -7,9 +7,6 @@ url = paste0(url1, url2)
 df = read.csv(url)
 str(df)
 
-# Summary statistics #
-summary(df)
-
 # Regression line #
 mod1 = lm(formula = Mshare ~ MMaid, data = df)
 summary(mod1)
