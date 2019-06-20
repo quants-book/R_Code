@@ -37,7 +37,7 @@ plot(st, type = 'b', pch = 16, main = 'Figure 10.3. Seasonal factors',
 
 # Figure 10.4 #
 st = rep(st, 6)
-plot(xt, main = 'Figure 10.4. Predicted vs. actual sales',
+plot(xt, main = 'Figure 10.4. Predicted versus actual sales',
   xlab = '', ylab = 'Sales (units)')
 lines(2011 + (t-1)/12, at*st, lty = 2)
 
