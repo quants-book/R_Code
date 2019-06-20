@@ -9,9 +9,9 @@ str(df)
 
 # Data description #
 table(df$GENDER, df$DEFAULT)
-tapply(df$DEFAULT=='Yes', df$GENDER, mean)
+tapply(df$DEFAULT == 'Yes', df$GENDER, mean)
 table(df$PART, df$DEFAULT)
-tapply(df$DEFAULT=='Yes', df$PART, mean)
+tapply(df$DEFAULT == 'Yes', df$PART, mean)
 
 # Regression analysis #
 mod = lm(formula = (DEFAULT == 'Yes') ~ GENDER + AGE + CITIZEN +
