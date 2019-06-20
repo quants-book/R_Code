@@ -14,7 +14,7 @@ summary(mod1)
 # Figure 4.1 #
 plot(formula = Resistance ~ Cement, data = df,
   main = 'Figure 4.1. Resistance vs. cement (R = 0.786)',
-  xlab = "Cement (kg/m3)", ylab = "Resistance (kg/cm2)",
+  xlab = 'Cement (kg/m3)', ylab = 'Resistance (kg/cm2)',
   pch = 20)
 abline(coefficients(mod1))
 
@@ -25,7 +25,7 @@ summary(mod2)
 # Figure 4.2 #
 plot(formula = Resistance ~ Additives, data = df,
   main = 'Figure 4.2. Resistance vs. additives (R = 0.646)',
-  xlab = "Additives (kg/m3)", ylab = "Resistance (kg/cm2)",
+  xlab = 'Additives (kg/m3)', ylab = 'Resistance (kg/cm2)',
   pch = 20)
 abline(coefficients(mod2))
 
@@ -36,7 +36,7 @@ summary(mod3)
 # Figure 4.3 #
 plot(formula = Resistance ~ Water, data = df,
   main = 'Figure 4.3. Resistance vs. water (R = 0.104)',
-  xlab = "Water (kg/m3)", ylab = "Resistance (kg/cm2)",
+  xlab = 'Water (kg/m3)', ylab = 'Resistance (kg/cm2)',
   pch = 20)
 abline(coefficients(mod3))
 
@@ -48,7 +48,7 @@ summary(mod4)
 # Figure 4.4 #
 plot(formula = Resistance ~ mod4$fitted.values, data = df,
   main = 'Figure 4.4. Resistance vs. predicted resistance',
-  xlab = "Predicted resistance (kg/cm2)", ylab = "Resistance (kg/cm2)",
+  xlab = 'Predicted resistance (kg/cm2)', ylab = 'Resistance (kg/cm2)',
   pch = 20)
 mod5 = lm(formula = Resistance ~ mod4$fitted.values, data = df)
 abline(coefficients(mod5))
