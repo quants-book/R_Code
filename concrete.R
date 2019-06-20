@@ -1,4 +1,4 @@
-## Concrete Resistance ##
+## Concrete Quality Control ##
 
 # Importing data #
 url1 = 'https://raw.githubusercontent.com/quants-book/'
