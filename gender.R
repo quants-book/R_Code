@@ -1,4 +1,4 @@
-## Gender Discrimination ##
+## Gender Salary Gap ##
 
 # Importing data #
 url1 = 'https://raw.githubusercontent.com/quants-book/'
@@ -21,13 +21,11 @@ mod1 = lm(formula = SALARY ~ TENURE, data = df)
 summary(mod1)
 
 # Figure 6.1 #
-pdf("fig 6.1.pdf", width = 3.25, height = 3.5, pointsize = 7)
 plot(formula = SALARY ~ TENURE, data = df,
   main = 'Figure 6.1. Salary vs. tenure (R = 0.549)',
   xlab = 'Tenure (years)', ylab = 'Salary (US dollars)',
   pch = 20)
 abline(coefficients(mod1))
-dev.off()
 
 # Regression analysis (1) #
 mod2 = lm(formula = SALARY ~ MALE, data = df)
