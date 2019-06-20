@@ -4,13 +4,13 @@
 url1 = 'https://raw.githubusercontent.com/quants-book/'
 url2 = 'CSV_Files/master/andinos.csv'
 url = paste0(url1, url2)
-df = read.csv(url, stringsAsFactors=FALSE)
+df = read.csv(url, stringsAsFactors = FALSE)
 str(df)
 
 # Figure 13.1 #
 xt = ts(data = df$sales, start = c(2013, 1),
   end = c(2017, 6), frequency = 12, deltat = 1/12)
-plot(xt, main = 'Figure 13.1. Rib eye monthly sales',
+plot(xt, main = 'Figure 13.1. Rib Eye monthly sales',
   xlab = '', ylab = 'Sales (units)')
 
 # Holt-Winters approximation (1) #
@@ -36,7 +36,7 @@ for(i in 13:48) {
 hwt = at*st
 
 # Figure 13.2 #
-plot(xt, main = 'Figure 13.2. Rib eye sales with HW trend (alpha = 0.2)',
+plot(xt, main = 'Figure 13.2. Rib Eye sales with HW trend (alpha = 0.2)',
   xlab = '', ylab = 'Sales (units)')
 t = 1:48
 lines(2013 + (t-1)/12, at, lty = 2)
