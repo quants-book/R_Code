@@ -4,7 +4,7 @@
 url1 = 'https://raw.githubusercontent.com/quants-book/'
 url2 = 'CSV_Files/master/brandy.csv'
 url = paste0(url1, url2)
-df = read.csv(url, stringsAsFactors=FALSE)
+df = read.csv(url, stringsAsFactors = FALSE)
 str(df)
 
 # Figure 12.3 #
@@ -52,7 +52,7 @@ dt = xt/st
 plot(xt, main = 'Figure 12.6. Deseasonalized brandy sales',
      xlab = '', ylab = 'Brandy sales (1000 litres alcohol)')
 t = 1:52
-lines(2001 + (t - 1)/4, dt, lty=2)
+lines(2001 + (t - 1)/4, dt, lty = 2)
 
 # Figure 12.7 #
 et = dt[1]
