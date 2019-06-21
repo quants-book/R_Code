@@ -23,7 +23,7 @@ summary(mod2)
 
 # Figure 7.2 #
 plot(formula = EFFICIENCY ~ IDLE, data = df,
-  main = 'Figure 7.2. Fuel efficiency vs. idle time (R = -0.256)',
+  main = 'Figure 7.2. Fuel efficiency vs. idle time (R = -0.257)',
   xlab = 'Idle time (%)', ylab = 'Fuel efficiency (km/l)', pch = 20)
 abline(coefficients(mod2))
 
