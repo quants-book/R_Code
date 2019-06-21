@@ -60,4 +60,4 @@ for(i in 2:52) et[i] = 0.2*dt[i] + 0.8*et[i - 1]
 plot(xt, 
   main = 'Figure 12.7. Brandy sales with exponential smoothing trend',
   xlab = '', ylab = 'Brandy sales (1000 litres alcohol)')
-lines(2001 + (t - 1)/4, et, lty=2)
+lines(2001 + (t - 1)/4, et, lty = 2)
